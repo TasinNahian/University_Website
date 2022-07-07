@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="shortcut icon" type="image" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- used google fonts poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- use font awesome 4 cdn for font awesome 4 icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- header,navbar -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- hideMenu() and showMenu() are js-->
+                <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="course.html">COURSE</a></li>
+                  <li><a href="blog.html">BLOG</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>  
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>Our Certificate & Online Programs For 2022</h1>
+    </section>
+
+    <!-- Blog page content -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="img/certificate.jpg" alt="">
+                <h2>Our Certificate & Online Programs For 2022</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quos quas illum, repellat nisi, velit consectetur voluptates, illo eveniet nemo fugiat mollitia sint ab odit quasi ad deserunt modi. Amet.</p>
+                <br/>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus voluptates natus ut est sed earum rerum cumque, aspernatur dicta nesciunt laboriosam perferendis atque illum, voluptatem officia ab asperiores aliquid placeat? Dignissimos debitis quasi cumque dolorem assumenda deleniti magnam, nemo vel iste atque ducimus omnis suscipit facilis ipsum animi dolore rem labore similique nam! Deserunt optio necessitatibus corrupti sed voluptatum, iure illum quod, illo ad nostrum aperiam dignissimos dolores eligendi. Laudantium.</p>
+                <br/>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima facere qui reiciendis commodi voluptates animi officiis neque non officia magni aut, perferendis nisi quasi maiores, repudiandae veniam rerum nihil sunt? Neque voluptas laborum temporibus velit, in rerum maxime explicabo corrupti, recusandae tenetur architecto, quas nisi incidunt! Dolor, corrupti magnam!</p>
+                <br/>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam doloremque deserunt ipsam laborum ratione. Repellendus architecto obcaecati sequi, quisquam doloribus optio officiis earum laudantium, temporibus quae atque, eveniet vitae deserunt quas cupiditate. Tempore consectetur, neque necessitatibus excepturi consequatur temporibus suscipit!</p>
+                <br/>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aspernatur quidem voluptates fuga explicabo libero incidunt natus asperiores consectetur omnis?</p>
+                
+                
+
+
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>18</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>35</span>
+                </div>
+                <div>
+                    <span>Auto CAD</span>
+                    <span>43</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="comment-box">
+            <h3>Leave a comment</h3>
+
+            <form action="" class="comment-form blog-left">
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+                <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+            </form>
+        </div>
+    </section>
+    
+    
+
+    <!-- Footer -->
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis atque ipsa laboriosam, 
+            <br>dolorum inventore fugit facilis, voluptatum dolore neque, nemo cum! A porro delectus <br> incidunt, provident officiis deserunt consectetur nobis.</p>
+            
+        <div class="icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+            <a href="https://twitter.com/?lang=en/" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://bd.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+
+        </div>
+        <p>Created by Tasin Nahian <span class="creator-acc"><a href="https://bd.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square"></i></a></span></p>
+    </section>
+
+
+
+
+
+    <!-- Js code for the functionality of the icons -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
